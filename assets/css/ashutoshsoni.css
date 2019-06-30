@@ -158,36 +158,9 @@ header.masthead .intro-text {
 }
 
 header.masthead .intro-text .intro-lead-in {
-  font-size: 22px;
-  font-style: italic;
   line-height: 22px;
   margin-bottom: 25px;
-}
-
-header.masthead .intro-text .intro-heading {
-  font-size: 50px;
-  font-weight: 700;
-  line-height: 50px;
-  margin-bottom: 25px;
-}
-
-@media (min-width: 768px) {
-  header.masthead .intro-text {
-    padding-top: 300px;
-    padding-bottom: 200px;
-  }
-  header.masthead .intro-text .intro-lead-in {
-    font-size: 40px;
-    font-style: italic;
-    line-height: 40px;
-    margin-bottom: 25px;
-  }
-  header.masthead .intro-text .intro-heading {
-    font-size: 75px;
-    font-weight: 700;
-    line-height: 75px;
-    margin-bottom: 50px;
-  }
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .service-heading {
@@ -198,7 +171,7 @@ header.masthead .intro-text .intro-heading {
 #scroll-up{
   position:relative;
   height: 80px;
-  }
+}
 
 #scroll-up a {
   display: inline-block;
@@ -227,7 +200,7 @@ header.masthead .intro-text .intro-heading {
 @-webkit-keyframe floating {
   from { -webkit-transform: translate(0,  0px); }
   65%  { -webkit-transform: translate(0, 15px); }
-  to   { -webkit-transform: translate(0, -0px); }  
+  to   { -webkit-transform: translate(0, -0px); }
 }
 
 @keyframes floating {
@@ -284,10 +257,48 @@ header.masthead .intro-text .intro-heading {
 }
 
 .scroll-up-label {
-  font-size: 1px;
   font-family: 'Cairo', Arial, serif;
   text-align: center;
+  color: grey;
+
 }
+
+.card-greeting {
+  padding: 15px 15px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.card-heading {
+  padding: 15px 35px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.card-sub-heading {
+  padding: 15px 35px;
+  font-size: 35px;
+}
+
+.card-footer-left {
+  padding-top: 15px;
+  padding-left: 30px;
+  padding-bottom: 0px;
+  text-align: left;
+  
+}
+
+.card-footer-right {
+  padding-top: 15px;
+  text-align: left;
+}
+
+.frame {
+  background-color: #f6f8fa
+  ;
+}
+
+
 
 .test-border {
   border: 1px solid red;
