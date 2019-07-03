@@ -160,7 +160,7 @@ header.masthead .intro-text {
 header.masthead .intro-text .intro-lead-in {
   line-height: 22px;
   margin-bottom: 25px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
 }
 
 .service-heading {
@@ -294,8 +294,8 @@ header.masthead .intro-text .intro-lead-in {
 }
 
 .frame {
-  background-color: #f6f8fa
-  ;
+  height: 300px;
+  width: 400px
 }
 
 
