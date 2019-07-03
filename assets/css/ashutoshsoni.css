@@ -293,12 +293,10 @@ header.masthead .intro-text .intro-lead-in {
   text-align: left;
 }
 
-.frame {
+.frame-image {
   height: 300px;
-  width: 400px
+  width: 400px;
 }
-
-
 
 .test-border {
   border: 1px solid red;
