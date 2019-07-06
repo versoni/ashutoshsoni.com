@@ -1,15 +1,15 @@
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    padding: 25px 0;
   }
 }
 ::-moz-selection {
-  background: #fed136;
+  background: #0bdee6;
   text-shadow: none;
 }
 
 ::selection {
-  background: #fed136;
+  background: #0bdee6;
   text-shadow: none;
 }
 
@@ -33,8 +33,8 @@ img::-moz-selection {
 }
 
 .btn-primary {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #0bdee6;
+  border-color: #0bdee6;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
@@ -82,7 +82,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #fed136;}
+  color: #0bdee6;}
 
 @media (min-width: 992px) {
   #mainNav {
@@ -125,14 +125,14 @@ img::-moz-selection {
   }
 
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover, #mainNav.navbar-shrink .navbar-brand:hover {
-    color: #fed136;
+    color: #0bdee6;
   }
 
 
   #mainNav.navbar-shrink .nav-link.active {
-    color: #fed136;
+    color: #0bdee6;
     outline: none;
-    border-bottom: 0.20rem solid #fed136;
+    border-bottom: 0.20rem solid #0bdee6;
     transition: border-bottom 0.3s;
   }
 
@@ -144,12 +144,13 @@ header.masthead {
   color: black;
   /* background: -webkit-gradient(linear, left top, left bottom, from(rgba(92, 77, 66, 0.8)), to(rgba(92, 77, 66, 0.8))), url("../images/header-bg.jpg"); */
   /* background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../images/header-bg.jpg"); */
+  /* background-image: url("../images/ashutoshsoni-background.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
   text-align: center;
-  /* background-image: url("../images/header-bg.jpg"); */
+  /* background-image: url("../images/ashutoshsoni-background03.jpg"); */
 }
 
 header.masthead .intro-text {
@@ -296,6 +297,10 @@ header.masthead .intro-text .intro-lead-in {
 .frame-image {
   height: 300px;
   width: 400px;
+}
+
+.section-bg {
+  background-color: #f7f7f7;
 }
 
 .test-border {
