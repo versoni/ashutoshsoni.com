@@ -53,6 +53,6 @@ var TxtType = function(el, toRotate, period) {
         // INJECT CSS
         var css = document.createElement("style");
         css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #0bdee6; padding-right: 5px}";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #b00000; padding-right: 5px}";
         document.body.appendChild(css);
     };
