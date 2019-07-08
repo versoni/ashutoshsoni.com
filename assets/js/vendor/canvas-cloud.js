@@ -1,12 +1,12 @@
-document.getElementById('div1').style.visibility = "hidden";
+document.getElementById('cloud-container').style.visibility = "hidden";
 
 var change = function changeVisibility() {
-  document.getElementById('all').style.visibility = "hidden";
-  document.getElementById('div1').style.visibility = "visible";
+  document.getElementById('cloud-all').style.visibility = "hidden";
+  document.getElementById('cloud-container').style.visibility = "visible";
 }
 setTimeout(change, 4000);
 
-var radius = 200;
+var radius = 150;
 var dtr = Math.PI / 180;
 var d = 300;
 
@@ -15,7 +15,7 @@ var active = false;
 var lasta = 1;
 var lastb = 1;
 var distr = true;
-var tspeed = 10;
+var tspeed = 1;
 var size = 250;
 
 var mouseX = 0;
@@ -30,7 +30,7 @@ window.onload = function() {
   var i = 0;
   var oTag = null;
 
-  oDiv = document.getElementById('div1');
+  oDiv = document.getElementById('cloud-container');
 
   aA = oDiv.getElementsByTagName('a');
   // aA=document.getElementById('div2');
