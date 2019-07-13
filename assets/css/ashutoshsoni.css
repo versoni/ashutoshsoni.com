@@ -42,31 +42,10 @@ img::-moz-selection {
   background: transparent;
 }
 
-
-
-.btn-xl {
-  font-size: 18px;
-  padding: 20px 40px;
-}
-
-.btn-primary {
-  background-color: #b00000;
-  border-color: #b00000;
-}
-
-.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #b00000 !important;
-  border-color: #b00000 !important;
-  color: white;
-}
-
-.btn-primary:active, .btn-primary:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(176,0,0, 0.5) !important;
-  box-shadow: 0 0 0 0.2rem rgba(176,0,0, 0.5) !important;
-}
-
 #mainNav {
-  background-color: #2C3E50;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
 }
 
 #mainNav .navbar-toggler {
@@ -74,19 +53,30 @@ img::-moz-selection {
   right: 0;
   padding: 13px;
   text-transform: uppercase;
-  color: white;
+  color: #2C3E50;
   border: 0;
-  background-color: #2C3E50;
+  background-color: white;
+
 }
 
 #mainNav .navbar-brand {
-  color: white;
-  font-family: 'Kaushan Script', Arial, serif;
+  font-size: 16px;
+  color: #2C3E50;
+  font-family: 'Muli', Arial, serif;
 }
 
-#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  /* color: #20354a; */
-  color: #fec810
+.dot {
+  color: #b00000;
+
+}
+
+
+#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus {
+  color: #20354a;
+  /* color: #fec810 */
+}
+#mainNav .navbar-brand:hover {
+  color: #b00000;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -95,7 +85,7 @@ img::-moz-selection {
   font-weight: 450;
   padding: 0.75em 0;
   letter-spacing: 1px;
-  color: white;
+  color: #2c3e50;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link:hover {
@@ -109,6 +99,8 @@ img::-moz-selection {
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
     background-color: transparent;
+    box-shadow: none;
+
   }
   #mainNav .navbar-brand {
     font-size: 1.75em;
@@ -120,17 +112,19 @@ img::-moz-selection {
     padding: 1.1em 1em !important;
     color: #2C3E50;
   }
+  
   #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
-    color: white;
-    background-color: #2C3E50;
+    color: #2c3e50;
+    background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
     padding: 12px 0;
-    color: white;
+    color: #2c3e50;
   }
 
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
@@ -138,7 +132,7 @@ img::-moz-selection {
     font-weight: 400;
     padding: 0.75em 0;
     letter-spacing: 1px;
-    color: white;
+    color: #2c3e50;
   }
 
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover, #mainNav.navbar-shrink .navbar-brand:hover {
@@ -171,7 +165,7 @@ header.masthead {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  text-align: center;
+
   /* background-image: url("../images/ashutoshsoni-background03.jpg"); */
 }
 
@@ -181,10 +175,63 @@ header.masthead .intro-text {
 }
 
 header.masthead .intro-text .intro-lead-in {
-  line-height: 22px;
   margin-bottom: 25px;
   /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
 }
+
+.intro-box {
+  border-left: 3px solid #b00000;
+}
+
+@media (min-width: 992px){
+  .intro-box{
+    margin-top: 20%;
+  }
+}
+
+
+.intro-greeting {
+  font-size: 20px;
+}
+
+.intro-heading {
+  font-size: 40px;
+}
+
+.intro-sub-heading {
+
+}
+
+.intro-footer {
+}
+
+.intro-footer-left {
+  display: inline;
+  margin-right: 5px;
+}
+
+.intro-footer-right {
+  display: inline;
+}
+.intro-footer-right span {
+  margin-right: 5px; 
+}
+
+.intro-footer-btn {
+  padding-top:10px;
+}
+
+.custom-btn {
+  border-color: #b00000;
+  color: #b00000;
+}
+
+.custom-btn:hover {
+  background-color: #b00000;
+  color: white;
+}
+
+
 
 .service-heading {
   margin: 15px 0;
@@ -286,35 +333,6 @@ header.masthead .intro-text .intro-lead-in {
 
 }
 
-.intro-greeting {
-  padding: 15px 15px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.intro-heading {
-  padding: 15px 35px;
-  font-size: 40px;
-  font-weight: bold;
-}
-
-.intro-sub-heading {
-  padding: 15px 35px;
-  font-size: 35px;
-}
-
-.intro-footer-left {
-  padding-top: 15px;
-  padding-left: 30px;
-  padding-bottom: 0px;
-  text-align: left;
-
-}
-
-.intro-footer-right {
-  padding-top: 15px;
-  text-align: left;
-}
 
 .frame-image {
   height: 600px;
@@ -327,7 +345,7 @@ header.masthead .intro-text .intro-lead-in {
 }
 
 .section-spacing {
-  padding: 50px 60px; 
+  padding: 50px 60px;
 }
 
 .section-subheading {
@@ -340,7 +358,7 @@ header.masthead .intro-text .intro-lead-in {
 
 .font-awesome-custom-bg {
   color: #b00000;
-  
+
 }
 
 .card-experience {
@@ -349,7 +367,7 @@ header.masthead .intro-text .intro-lead-in {
   width: 100%;
   border-left: 4px solid #b00000;
   padding:20px 25px;
-  
+
 }
 
 .card-experience:hover {
@@ -369,7 +387,7 @@ header.masthead .intro-text .intro-lead-in {
   width: 75%;
   bottom: 0;
   left: 0%;
-  border-bottom: 3px solid #b00000;  
+  border-bottom: 3px solid #b00000;
 }
 
 .project-count {
@@ -380,7 +398,7 @@ header.masthead .intro-text .intro-lead-in {
 
 .project-title {
   padding-top:10px;
-  
+
 }
 
 .test-border {
