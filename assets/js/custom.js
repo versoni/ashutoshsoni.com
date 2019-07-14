@@ -1,3 +1,9 @@
+// footer copyright date
+
+var currentFooterDate = new Date();
+var footerYear = document.getElementById("copyright-year");
+footerYear.innerHTML = currentFooterDate.getFullYear();
+
 // typewriter effect
 
 var TxtType = function(el, toRotate, period) {
@@ -56,3 +62,17 @@ var TxtType = function(el, toRotate, period) {
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #b00000; padding-right: 5px}";
         document.body.appendChild(css);
     };
+
+// tag cloud
+$(document).ready(function() {
+    if(!$('#myCanvas').tagcanvas({
+        textColour: '#b00000',
+        outlineColour: '#b00000',
+        reverse: true,
+        depth: 0.8,
+        maxSpeed: 0.05
+    },'tags')) {
+        // something went wrong, hide the canvas container
+        $('#myCanvasContainer').hide();
+    }
+});

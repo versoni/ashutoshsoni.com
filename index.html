@@ -1,7 +1,9 @@
 <!doctype html>
 <html>
     <head>
-        <meta charset="UTF-8">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Ashutosh Soni</title>
 
         <!-- bootstrap css -->
@@ -10,9 +12,12 @@
               integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
               crossorigin="anonymous">
 
+        <!-- aos css -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
         <!-- google fonts -->
         <link rel="stylesheet"
-              href="https://fonts.googleapis.com/css?family=Kaushan Script">
+              href="https://fonts.googleapis.com/css?family=Muli">
         <link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
 
         <!-- fontawesome css -->
@@ -31,7 +36,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
                 <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                    <b>Ashutosh Soni</b></a>
+                    <b>ashutosh</b><b class="dot">.</b></a>
                 <button class="navbar-toggler navbar-toggler-right"
                         type="button" data-toggle="collapse"
                         data-target="#navbarResponsive"
@@ -44,7 +49,7 @@
                     <ul class="navbar-nav text-uppercase ml-auto">
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger"
-                               href="#about">Profile Snapshot</a>
+                               href="#about">About me</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger"
@@ -56,7 +61,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger"
-                               href="#team">Blog</a>
+                               href="#blogs">Blog</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger"
@@ -70,74 +75,91 @@
         <!-- Header -->
         <header class="masthead">
             <div class="container">
-                <div class="intro-text">
-                    <div class="row intro-lead-in">
-                        <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
-                            <div class="row intro-greeting"> Hi! I'm </div>
-                            <div class="row intro-heading"> Ashutosh Soni </div>
-                            <div class="row intro-sub-heading">
-                                <p class="typewrite" data-period="2000" data-type='["Programmer ","Technology Enthusiastic ", "Blogger"]' ></p>
-                                <span class="wrap"></span>
+                <div class="row intro-text">
+                    <div class="col-lg-12 intro-lead-in">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="intro-box">
+                                    <div class="intro-greeting text-muted">
+                                        Hey there!
+                                    </div>
+                                    <div class="intro-heading">
+                                        <span class="text-muted">I am</span>
+                                        <span class="typewrite display-4" data-period="2000" data-type='["Ashutosh Soni ","a Programmer ", "Blogger"]'></span>
+                                        <span class="wrap"></span>
+
+                                    </div>
+                                    <div class="intro-sub-heading text-muted">
+                                        <p>Achievement driven professional targeting assignments in  Web or Software development with a leading organization of repute.</p>
+
+                                    </div>
+                                    <div class="intro-footer">
+                                        <div class="intro-footer-left">
+                                            <i>Connect at:</i>
+                                        </div>
+
+                                        <div class="intro-footer-right">
+                                            <span>
+                                                <a href="#">
+                                                    <i class="fab fa-linkedin-in"></i>
+                                                </a>
+                                            </span>
+                                            <span>
+                                                <a href="#">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="intro-footer-btn">
+                                        <a href="#about" role="button" class="btn btn-outline-danger custom-btn js-scroll-trigger">KNOW MORE</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 intro-footer-left">
-                                    <i>Connect at:</i>
-                                </div>
-                                <div class="col-md-7 intro-footer-right">
-                                    <ul class="list-inline social-buttons">
-                                        <li class="list-inline-item">
-                                            <a href="#">
-                                                <i class="fab fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="#">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="#">
-                                                <i class="fab fa-linkedin-in"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
+                            <div class="col-md-5 text-center">
+                                <img src="assets/images/ashutosh-soni-cover.png" class="frame-image image-responsive" alt="ashutosh soni">
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                            <img src="assets/images/ashutoshsoni03.png" class="frame-image rounded float-left image-responsive" alt="ashutosh soni">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <p>"I love to write code to make miracle happens"</p>
+                            </div>
+                            <div class="col-12">
+                                <div id="scroll-up">
+                                    <a class="js-scroll-trigger" href="#about">
+                                        <span></span>
+                                    </a>
+                                </div>
+                                <div class="scroll-up-label">
+                                    <h6>KNOW MORE</h6>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-
-                </div>
-            </div>
-            <div class="container test-border">
-                <div>
-                    <p>Achievement driven professional targeting assignments in Full-stack
-                        Web/ Software development with a leading organization of
-                        repute</p>
-                </div>
-                <div id="scroll-up">
-                    <a class="js-scroll-trigger" href="#about"><span></span></a>
-                </div>
-                <div class="scroll-up-label">
-                    <h6>Scroll Up</h6>
                 </div>
             </div>
         </header>
 
-        <!-- Profile snapshot -->
+
+
+
+
+        <!-- About me -->
         <section class="page-section" id="about">
             <div class="container-fluid section-bg section-spacing">
                 <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading text-uppercase">Profile Snapshot</h2>
-                        <h4 class="section-subheading text-muted"><i>
+                    <div class="col-md-12 text-center">
+                        <h2 class="section-heading text-uppercase" data-aos="fade-up">About me</h2>
+                        <h4 class="section-subheading text-muted" data-aos="fade-up"><i>
                             "I love to write code to make miracle happens"</i></h4>
                     </div>
                 </div>
-                <div class="row text-center">
-                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 profile-points ">
+
+                <div class="row text-center" data-aos="fade-up">
+                    <div class="col-sm-12 profile-points">
                         <ul>
                             <li>
                                 B.Tech Graduate in Computer Science and Engineering.
@@ -147,7 +169,9 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-sm">
+                </div>
+                <div class="row text-center">
+                    <div class="col-sm" data-aos="fade-up">
                         <span class="fa-stack fa-2x">
                             <i class="fas fa-circle fa-stack-2x font-awesome-custom-bg"></i>
                             <i class="fas fa-graduation-cap fa-stack-1x fa-inverse"></i>
@@ -159,7 +183,7 @@
 
                     </div>
 
-                    <div class="col-sm">
+                    <div class="col-sm" data-aos="fade-up">
                         <span class="fa-stack fa-2x">
                             <i class="fas fa-circle fa-stack-2x font-awesome-custom-bg"></i>
                             <i class="fas fa-code fa-stack-1x fa-inverse"></i>
@@ -171,7 +195,7 @@
 
                     </div>
 
-                    <div class="col-sm">
+                    <div class="col-sm" data-aos="fade-up">
                         <span class="fa-stack fa-2x">
                             <i class="fas fa-circle fa-stack-2x font-awesome-custom-bg"></i>
                             <i class="fas fa-recycle fa-stack-1x fa-inverse"></i>
@@ -183,7 +207,7 @@
 
                     </div>
 
-                    <div class="col-sm">
+                    <div class="col-sm" data-aos="fade-up">
                         <span class="fa-stack fa-2x">
                             <i class="fas fa-circle fa-stack-2x font-awesome-custom-bg"></i>
                             <i class="fas fa-cogs fa-stack-1x fa-inverse"></i>
@@ -194,24 +218,24 @@
                         </p>
 
                     </div>
-
-
                 </div>
+
             </div>
         </section>
 
+
         <!-- Experience & projects -->
         <section class="page-section" id="experience">
-            <div class="container  section-spacing">
+            <div class="container section-spacing">
                 <div class="row text-center">
                     <div class="col-lg-12 text-center">
-                        <h2 class="section-heading text-uppercase">Experience and Projects</h2>
-                        <h4 class="section-subheading text-muted"><i>
+                        <h2 class="section-heading text-uppercase" data-aos="fade-right">Experience and Projects</h2>
+                        <h4 class="section-subheading text-muted" data-aos="fade-up"><i>
                             Professional experience of <b>2+</b> years</i></h4>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm card-experience">
+                <div class="row" >
+                    <div class="col-sm-12 card-experience" data-aos="fade-left">
                         <div class="row">
                             <div class="col-md-10">
                                 <h4>Software Engineer I</h4>
@@ -261,46 +285,59 @@
             <div class="container-fluid section-bg section-spacing">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2 class="section-heading text-uppercase">Skills</h2>
-                        <h4 class="section-subheading text-muted"><i>
+                        <h2 class="section-heading text-uppercase" data-aos="fade-up">Skills</h2>
+                        <h4 class="section-subheading text-muted" data-aos="fade-up-left"><i>
                             "Skills pay the bills"</i></h4>
                     </div>
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6">
-                            <b>Mostly worked on clojure</b>
+                        <div class="col-md-6 skills-left-box" data-aos="fade-up-right">
+                            <div class="row">
+                                <b>Programming language: </b>
+                                <span class="skills-set-val">
+                                    Clojure, Javascript
+                                </span>
+                            </div>
+                            <div class="row">
+                                <b>Front-end Technologies: </b>
+                                <span class="skills-set-val">
+                                    Reframe, React.js, HTML5, CSS3
+                                </span>
+                            </div>
+                            <div class="row">
+                                <b>Back-end Technologies: </b>
+                                <span class="skills-set-val">
+                                    Node.js (Express)
+                                </span>
+                            </div>
+                            <div class="row">
+                                <b>Cloud Computing: </b>
+                                <span class="skills-set-val">
+                                    Azure
+                                </span>
+                            </div>
                         </div>
-                        <div class="col-col-6">
-
-                            <!-- canvas-cloud -->
-                            <div id="cloud-all" class="text-center">
-                                <div class="loading-bar">Loading-Bar</div>
-                                <div class="cloud-loding">Loding..</div>
+                        <div class="col-md-6 text-center" data-aos="fade-up-left">
+                            <div id="myCanvasContainer">
+                                <canvas width="350" height="300" id="myCanvas">
+                                    <p>Anything in here will be replaced on browsers that support the canvas element</p>
+                                </canvas>
                             </div>
-                            <div id="cloud-container">
-                                <a href="#">CSS</a>
-                                <a href="#">HTML5</a>
-                                <a href="#">DIV</a>
-                                <a href="#">style</a>
-                                <a href="#">Color</a>
-                                <a href="#">3D</a>
-                                <a href="#">JavaScript</a>
-                                <a href="#">Font</a>
-                                <a href="#">Node.js</a>
-                                <a href="#">THREE.js</a>
-                                <a href="#">Canvas</a>
-                                <a href="#">Class</a>
-                                <a href="#">Web</a>
-                                <a href="#">Math</a>
-                                <a href="#">Random</a>
-                                <a href="#">Fractals</a>
-                                <a href="#">Simplex Noise</a>
-                                <a href="#">Array</a>
-                                <a href="#">Algonithmic Animation</a>
-                                <a href="#">function</a>
+                            <div id="tags">
+                                <ul>
+                                    <li><a href="#">clojure</a></li>
+                                    <li><a href="#">ClojureScript</a></li>
+                                    <li><a href="#">JavaScript</a></li>
+                                    <li><a href="#">node.js</a></li>
+                                    <li><a href="#">React.js</a></li>
+                                    <li><a href="#">Azure</a></li>
+                                    <li><a href="#">linux</a></li>
+                                    <li><a href="#">HTML 5</a></li>
+                                    <li><a href="#">CSS 3</a></li>
+                                    <li><a href="#">Reframe</a></li>
+                                </ul>
                             </div>
-
 
 
                         </div>
@@ -310,6 +347,98 @@
             </div>
         </section>
 
+        <!-- Blogs -->
+        <section class="page-section" id="blogs">
+            <div class="container section-spacing">
+                <div class="row text-center">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading text-uppercase" data-aos="fade-right">Blogs</h2>
+                        <h4 class="section-subheading text-muted" data-aos="fade-up"><i>
+                            Professional experience of <b>2+</b> years</i></h4>
+                    </div>
+                </div>
+                <div class="row" >
+                    <div class="col-sm blog-holder" data-aos="fade-up-right">
+                        <div class="col-sm-12 card-blog">
+                            Introduction to clojure
+                        </div>
+                    </div>
+                    <div class="col-sm blog-holder" data-aos="fade-up-right">
+                        <div class="col-sm-12 card-blog">
+                            Introduction to clojure
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row text-center">
+                    <div class="col-sm-12 blog-btn" data-aos="fade-up">
+                        <a href="#" role="button" class="btn btn-outline-danger custom-btn js-scroll-trigger">READ MORE</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact  -->
+        <section class="page-section" id="contact">
+            <div class="container-fluid section-bg section-spacing">
+                <div class="row">
+                    <div class="col-lg-12 text-center" >
+                        <h2 class="section-heading text-uppercase">Contact</h2>
+                        <!-- <h4 class="section-subheading text-muted"><i> "Skills pay the bills"</i></h4> -->
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row p-3 text-center">
+                        <div class="col-sm">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-circle fa-stack-2x font-awesome-custom-bg"></i>
+                                <i class="fas fa-map-marker-alt fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4 class="service-heading">New Delhi, India</h4>
+                        </div>
+                        <div class="col-sm">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-circle fa-stack-2x font-awesome-custom-bg"></i>
+                                <i class="fas fa-mobile-alt fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4 class="service-heading">+91 9149262609</h4>
+                        </div>
+                        <div class="col-sm">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-circle fa-stack-2x font-awesome-custom-bg"></i>
+                                <i class="fas fa-paper-plane fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4 class="service-heading">contact@ashutoshsoni.com</h4>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- footer  -->
+        <section class="page-section" id="footer">
+            <div class="container-fluid footer-bg">
+                <div class="row text-center">
+                    <div class="col-lg-12">
+                        <h2 class="footer-brand">ashutosh<span class="dot">.</span></h2>
+                        <h6 class="section-subheading">
+                            <i>
+                                ©
+                                <span id="copyright-year">2018</span>
+                                . All Right Reserved, Designed By Ashutosh Soni.
+                            </i>
+                        </h6>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
 
 
         <!-- Bootstrap core JavaCloud-Loding -->
@@ -320,9 +449,19 @@
         <script src="assets/js/vendor/jquery.easing.min.js"></script>
         <script src="assets/js/scrolling-nav.js"></script>
 
+        <!-- tagcanvas  2.9 -->
+        <script src="assets/js/vendor/jquery.tagcanvas.min.js"></script>
+
+        <!-- AOS  -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+         AOS.init({
+             duration: 1200,
+         });
+        </script>
+
         <!-- Custom script for this template -->
         <script src="assets/js/custom.js"></script>
-        <!-- <script src="assets/js/vendor/canvas-cloud.js"></script> -->
 
     </body>
 </html>
