@@ -4,7 +4,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Ashutosh Soni</title>
+        <title>{{page.title}}</title>
 
         <!-- bootstrap css -->
         <link rel="stylesheet"
@@ -85,12 +85,12 @@
                                     </div>
                                     <div class="intro-heading">
                                         <span class="text-muted">I am</span>
-                                        <span class="typewrite display-4" data-period="2000" data-type='["Ashutosh Soni ","a Programmer ", "Blogger"]'></span>
+                                        <span class="typewrite display-4" data-period="2000" data-type='{{page.typewriter}}'></span>
                                         <span class="wrap"></span>
 
                                     </div>
                                     <div class="intro-sub-heading text-muted">
-                                        <p>Achievement driven professional targeting assignments in  Web or Software development with a leading organization of repute.</p>
+                                        <p>{{page.intro-subheading}}</p>
 
                                     </div>
                                     <div class="intro-footer">
@@ -100,12 +100,12 @@
 
                                         <div class="intro-footer-right">
                                             <span>
-                                                <a href="#">
+                                                <a href={{page.link-linkedin}}>
                                                     <i class="fab fa-linkedin-in"></i>
                                                 </a>
                                             </span>
                                             <span>
-                                                <a href="#">
+                                                <a href={{page.link-facebook}}>
                                                     <i class="fab fa-facebook-f"></i>
                                                 </a>
                                             </span>
@@ -124,7 +124,7 @@
                         </div>
                         <div class="row">
                             <div class="col-12 text-center">
-                                <p>"I love to write code to make miracle happens"</p>
+                                <p>{{page.know-more-heading}}</p>
                             </div>
                             <div class="col-12">
                                 <div id="scroll-up">
@@ -154,19 +154,18 @@
                     <div class="col-md-12 text-center">
                         <h2 class="section-heading text-uppercase" data-aos="fade-up">About me</h2>
                         <h4 class="section-subheading text-muted" data-aos="fade-up"><i>
-                            "I love to write code to make miracle happens"</i></h4>
+                            {{page.about-sub-heading}}</i></h4>
                     </div>
                 </div>
 
                 <div class="row text-center" data-aos="fade-up">
                     <div class="col-sm-12 profile-points">
                         <ul>
+                            {% for i in page.profile-points %}
                             <li>
-                                B.Tech Graduate in Computer Science and Engineering.
+                                {{i}}
                             </li>
-                            <li>
-                                Technically sound professional with 2+ years of experience in Software Architecture plannig, designing and development.
-                            </li>
+                            {% endfor %}
                         </ul>
                     </div>
                 </div>
@@ -235,33 +234,39 @@
                     </div>
                 </div>
                 <div class="row" >
+
+                    {% for i in page.experience %}
+
+                    <!-- start of card -->
                     <div class="col-sm-12 card-experience" data-aos="fade-left">
                         <div class="row">
                             <div class="col-md-10">
-                                <h4>Software Engineer I</h4>
+                                <h4>{{i.designation}}</h4>
 
                             </div>
                             <div class="col-md-2">
-                                <i>Nov 2017 - Present</i>
+                                <i>{{i.duration}}</i>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <h5><a href="#">Haldor Topsoe A/S</a></h5>
+                                <h5><a href={{i.link}}>{{i.company}}</a></h5>
                                 <p>
-                                    Haldor Topsoe A/S is global leader in catalysis, hydroprocessing and process technology. They are running on Industry 4.0 model which includes Cyber-physical systems, IoTs, cloud computing, cognitive computing, etc.
+                                    {{i.company-des}}
                                 </p>
                             </div>
                             <div class="col-md-12">
                                 <span class="project-count">3</span>
                                 <span class="project-legend"><b>Projects</b></span>
                             </div>
+                            <!-- Project start -->
+                            {% for j in i.projects%}
                             <div class="col-md-12">
                                 <ul>
                                     <li class="project-title">
-                                        <h4>TrueTemp</h4>
-                                        <p>Mar 2018 - Oct 2018</p>
-                                        <p>The project provides analytical, Graphical temperature study of chemical plant walls. It is built as SPAs application. Which include functionalities depending on users’ subscription.</p>
+                                        <h4>{{j.title}}</h4>
+                                        <p>{{j.duration}}</p>
+                                        <p>{{j.description}} </p>
                                         <p><b>Roles & Responsibilites:</b>
                                             Architecture planning, designing and developing the app.
                                         </p>
@@ -272,10 +277,15 @@
                                     </li>
                                 </ul>
                             </div>
+                            {% endfor %}
+                            <!-- Project ends -->
 
                         </div>
                     </div>
+                    <!-- end of card -->
 
+                    {% endfor %}
+                    
                 </div>
             </div>
         </section>
@@ -412,33 +422,15 @@
                             </span>
                             <h4 class="service-heading">contact@ashutoshsoni.com</h4>
                         </div>
-                        
+
                     </div>
 
                 </div>
             </div>
         </section>
-
 
         <!-- footer  -->
-        <section class="page-section" id="footer">
-            <div class="container-fluid footer-bg">
-                <div class="row text-center">
-                    <div class="col-lg-12">
-                        <h2 class="footer-brand">ashutosh<span class="dot">.</span></h2>
-                        <h6 class="section-subheading">
-                            <i>
-                                ©
-                                <span id="copyright-year">2018</span>
-                                . All Right Reserved, Designed By Ashutosh Soni.
-                            </i>
-                        </h6>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
+        {% include footer.html %}
 
 
         <!-- Bootstrap core JavaCloud-Loding -->
